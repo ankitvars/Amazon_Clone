@@ -7,12 +7,12 @@ import CheckoutProduct from './CheckoutProduct';
 
 
 function Checkout() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket ,user}, dispatch] = useStateValue();
 
   return (
-    <div className='checkout'>
+    <div className='container'>
       <Header />
-      <div className='container'>
+      <div className='checkout'>
         <div className='checkout_left'>
           <img
             className='checkout__ad'
@@ -20,7 +20,7 @@ function Checkout() {
             alt=''
           />
           <div>
-            <h3 className='checkout__title1'>Hello, Guest</h3>
+            <h3 className='checkout__titlea'>Hello,{user ? user.email : 'Guest'}</h3>
             <h2 className='checkout__title'>Your Shoping Basket</h2>
 
             {basket.map((item) => (

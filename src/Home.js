@@ -35,10 +35,10 @@ function Home() {
           <div className='home__row'>
             <Product
               id='4903850'
-              title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+              title="Samsung LC49RG90SSUXEN 32' Curved LED Gaming Monitor"
               price={199.99}
               rating={3}
-              image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
+              image='https://m.media-amazon.com/images/I/611poaUg1HL._SX450_.jpg'
             />
             <Product
               id='23445930'
