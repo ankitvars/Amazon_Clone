@@ -23,7 +23,7 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "src",
         "destination": "/index.html"
       }
     ]
