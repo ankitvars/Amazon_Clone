@@ -24,3 +24,13 @@
 .payment__address,.payment__items,.payment__details{
   flex:0.8;
 }
+.submit{
+   background: #f0c14b;
+    border-radius: 2px;
+    color: black;
+    width: 40%;
+    height: 25px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+}

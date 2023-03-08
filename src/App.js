@@ -10,6 +10,8 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { useStateValue } from './StateProvider';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+import PaymentSuccess from './PaymentSuccess';
+
 
 function App() {
   const [{ }, dispatch] = useStateValue();
@@ -46,6 +48,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/payment-success' element={<PaymentSuccess />} />
           <Route
             path='/payment'
             element={

@@ -14,7 +14,7 @@ function Header() {
       const auth = getAuth();
       auth.signOut();
     }
-  }
+  };
 
   return (
     <div className='header'>
@@ -33,8 +33,12 @@ function Header() {
       <div className='header__nav'>
         <Link to={!user && '/login'} style={{ textDecoration: 'none' }}>
           <div onClick={handleAuthentication} className='header__option'>
-            <span className='header__optionLineOne'>Hello {user ? user.email : 'Guest'}</span>
-            <span className='header__optionLineTwo'>{user ? 'Sign Out' : 'Sign In'}</span>
+            <span className='header__optionLineOne'>
+              Hello {user ? user.email : 'Guest'}
+            </span>
+            <span className='header__optionLineTwo'>
+              {user ? 'Sign Out' : 'Sign In'}
+            </span>
           </div>
         </Link>
 

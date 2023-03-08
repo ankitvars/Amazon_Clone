@@ -11,7 +11,7 @@ function Home() {
         <div className='home__container'>
           <img
             className='home__image'
-            src='https://m.media-amazon.com/images/I/71vdTR50hFL._SX3000_.jpg'
+            src='https://m.media-amazon.com/images/I/71SnvcmmGlL._SX3000_.jpg'
             alt=''
           />
 
